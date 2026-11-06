@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 600px;
     width: 100%;
 
     .sign-in-box{
@@ -13,8 +13,8 @@
         align-items: center;
         flex-direction: column;
         border: 1px solid #F2F2F2;
-        border-radius: 10px;
-        gap: 12px;
+        border-radius: 8px;
+        gap: 20px;
         box-shadow: 0 0 56px rgba(0, 38, 3, 0.08);
 
         h2{
@@ -24,71 +24,87 @@
             font-weight: 600;
             line-height: 120%;
             color: #1A1A1A;
-            margin-bottom: 5px;
         }
-        .input{
-            position: relative;
+        
+        div{
+            width: 472px;
+            height: 147px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 12px;
+            position: relative;
 
-            img{
-                width: 20px;
-                height: 20px;
-                position: absolute;
-                right: 20px;
-                bottom: 14px;
-            }
-
-        
             input{
-                padding: 16px;
+                padding: 16px 14px;
                 width: 472px;
                 height: 49px;
                 border: 1px solid #E5E5E5;
                 border-radius: 6px;
-                position: relative;
-            
+
                 &::placeholder{
                     color: #999999;
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 130%;
 
-                    .pass{
-                        position: relative;
-                        width: 500px;
-                        height: 100px;
-                    }
                 }
-
             }
-        }
 
-        .password_reset{
-            width: 472px;
-            height: 21px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 150%;
-            color: #666666;
-            margin-top: 5px;
-
-            .remember{
+            .eye{
                 width: 20px;
                 height: 20px;
-                border-radius: 3px;
-                border: 1px solid #CCCCCC;
+                position: absolute;
+                bottom: 52px;
+                right: 16px;
             }
+
+            & > div{
+                margin-top: 4px;
+                width: 472px;
+                height: 21px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                gap: 225px;
+
+                .remember{
+                    width: 131px;
+                    display: flex;
+                    gap: 6px;
+                }
+
+                & > input{
+                    width: 40px;
+                    height: 20px;
+                    border: 1px solid #CCCCCC;
+                    border-radius: 3px;
+                }
+
+                label{
+                    width: 234px;
+                    height: 24px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    color: #666666;
+                }
+                
             
-            label{
-                margin-right: 220px;
+
+                p{
+                    width: 234px;
+                    height: 24px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    color: #666666;
+                    display: flex;
+                }
             }
         }
 
-        .log_in_btn{
+            
+        button{
             width: 472px;
             height: 45px;
             background-color: #00B207;
@@ -100,22 +116,15 @@
             margin-top: 5px;
         }
 
-        .create_account{
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+            color: #666666;
             display: flex;
-            justify-content: space-between;
-            gap: 5px;
-            margin-top: 10px;
-
-            p{
-                font-size: 14px;
-                font-weight: 400;
-                color: #666666;   
-            }
+            gap: 4px;
 
             a{
-                width: 60px;
-                height: 25px;
-                font-size: 14px;
                 font-weight: 500;
                 color: #1A1A1A;
             }
