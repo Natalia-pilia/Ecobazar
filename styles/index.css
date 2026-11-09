@@ -1344,6 +1344,10 @@
                                 color: #FF8A00;
                             }
 
+                            .gray{
+                                color: #CCCCCC;
+                            }
+
                             h4{
                                 font-size: 12px;
                                 line-height: 130%;
@@ -1625,6 +1629,10 @@
 
                         .orange {
                             color: #FF8A00;
+                        }
+
+                        .gray{
+                            color: #CCCCCC;
                         }
                         h4{
                             font-size: 12px;
