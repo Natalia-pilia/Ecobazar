@@ -121,11 +121,22 @@
 
     <!-- Start of The Shop Section -->
     <section class="shop">
-      <div class="main_filter"></div>
+      <div class="main_filter">
+        <button type="button">Filter<img src="./assets/Filter.svg" alt="Filter"></button>
+        <div class="sort">Sort by: 
+          <select size="1">
+            <optgroup>
+              <option value="latest">Latest</option>
+              <option value="oldest">Oldest</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="results"><span>52</span> Results Found</div>
+      </div>
 
       <div class="shop_grid">
         <section class="filter">
-          <h1>All Categories</h1>
+          <h1>All Categories <i class="fa-solid fa-chevron-up"></i></h1>
           
           <div class="categories">
            <div> <input type="radio" name="category"> <p>Fresh Fruit <span> (134) </span></p> </div>
@@ -139,7 +150,7 @@
 
           <div class="seperator"></div>
 
-          <h1>Price</h1>
+          <h1>Price <i class="fa-solid fa-chevron-up"></i></h1>
           <div class="prices">
             <div class="wrapper">
               <div class="values" style="display: none">
@@ -171,7 +182,7 @@
             <span>Price: <span>50 — 1,500</span></span>
           </div>
 
-          <h1>Rating</h1>
+          <h1>Rating <i class="fa-solid fa-chevron-up"></i></h1>
           <div class="ratings">
             <div>
               <div class="checkbox_container">
@@ -184,7 +195,9 @@
                 <i class="fa-solid fa-star orange"></i>
                 <i class="fa-solid fa-star orange"></i>
                 <i class="fa-solid fa-star orange"></i>
+                <span>5.0</span>
               </p>
+      
             </div>
             <div>
               <div class="checkbox_container">
@@ -197,6 +210,7 @@
                 <i class="fa-solid fa-star orange"></i>
                 <i class="fa-solid fa-star orange"></i>
                 <i class="fa-solid fa-star gray"></i>
+                <span>4.0 & up</span>
               </p>
             </div>
             <div>
@@ -210,6 +224,7 @@
                 <i class="fa-solid fa-star orange"></i>
                 <i class="fa-solid fa-star gray"></i>
                 <i class="fa-solid fa-star gray"></i>
+                <span>3.0 & up</span>
               </p>
             </div>
             <div>
@@ -223,6 +238,7 @@
                 <i class="fa-solid fa-star gray"></i>
                 <i class="fa-solid fa-star gray"></i>
                 <i class="fa-solid fa-star gray"></i>
+                <span>2.0 & up</span>
               </p>
             </div>
             <div>
@@ -236,17 +252,79 @@
                 <i class="fa-solid fa-star gray"></i>
                 <i class="fa-solid fa-star gray"></i>
                 <i class="fa-solid fa-star gray"></i>
+                <span>1.0 & up</span>
               </p>
             </div>
           </div>
 
-          <h1>Popular Tag</h1>
-          <div class="tags"></div>
+          <h1>Popular Tag <i class="fa-solid fa-angle-up"></i></h1>
+          <div class="tags">
+            <p>Healthy</p>
+            <p>Low fat</p>
+            <p>Vegetarian</p>
+            <p>Kid foods</p>
+            <p>Vitamins</p>
+            <p>Bread</p>
+            <p>Meat</p>
+            <p>Snacks</p>
+            <p>Tiffin</p>
+            <p>Launch</p>
+            <p>Dinner</p>
+            <p>Breakfast</p>
+            <p>Fruit</p>
+          </div>
 
-          <div class="discount"></div>
+          <div class="discount">
+            <h1><span>79%</span> Discount</h1>
+            <p>on your first order</p>
+            <button type="button">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
 
           <h1>Sale Products</h1>
-          <div class="sales"></div>
+          <div class="sales">
+            <div class="sale_card">
+                <img src="./assets/Products/Red Capsicum.png" alt="product">
+                <div class="product_info">
+                  <h2>Red Capsicum</h2>
+                  <span class="price">32.00 <span class="old_price">20.99</span></span>
+                  <div class="stars">
+                  <i class="fa-solid fa-star orange"></i>
+                  <i class="fa-solid fa-star orange"></i>
+                  <i class="fa-solid fa-star orange"></i>
+                  <i class="fa-solid fa-star orange"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="sale_card">
+              <img src="./assets/Products/mango.png" alt="product">
+              <div class="product_info">
+                <h2>Chanise Cabbage</h2>
+                <span class="price">24.00 <span class="old_price">20.99</span></span>
+                <div class="stars">
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </div>
+            <div class="sale_card">
+              <img src="./assets/Products/Green Capsicum.png" alt="product">
+              <div class="product_info">
+                <h2>Green Capsicum</h2>
+                <span class="price">32.00 <span class="old_price">20.99</span></span>
+                <div class="stars">
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star orange"></i>
+                <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="product_grid">
@@ -429,7 +507,7 @@
                 <div class="left">
                   <h1>Green Apple</h1>
                   <p>
-                    <span class="price"></span>
+                    <span class="price">14.99</span>
                   </p>
                   <div class="stars">
                     <i class="fa-solid fa-star orange"></i>
@@ -527,6 +605,7 @@
                   <h1>Green Cucumber</h1>
                   <p>
                     <span class="price">14.99</span>
+                    <span class="offer">sale 50%</span>
                   </p>
                   <div class="stars">
                     <i class="fa-solid fa-star orange"></i>
@@ -648,7 +727,7 @@
                 <img src="./assets/Eye.svg" alt="see" />
               </div>
               <div class="image">
-                <img src="./assets/products/Red chilli.png" alt="product" />
+                <img src="./assets/products/Red chili.png" alt="product" />
               </div>
               <div class="inner">
                 <div class="left">
